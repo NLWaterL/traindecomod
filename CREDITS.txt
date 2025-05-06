@@ -1,0 +1,5 @@
+This mod is based on the CreateFramed mod made by Dakota Pride.
+
+I only made a few changes to make this traindeco mod:
+-deleted the trapdoor and some blocks
+-changed the textures of the blocks and rename them.

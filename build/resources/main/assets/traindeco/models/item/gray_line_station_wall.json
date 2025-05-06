@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "traindeco:block/train_wall_sides",
-    "side": "traindeco:block/gray_line_train_wall"
-  }
-}

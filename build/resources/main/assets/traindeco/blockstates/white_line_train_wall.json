@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "traindeco:block/white_line_train_wall"},
-    "facing=east": { "model": "traindeco:block/white_line_train_wall", "y": 90},
-    "facing=south": { "model": "traindeco:block/white_line_train_wall", "y": 180},
-    "facing=west": { "model": "traindeco:block/white_line_train_wall", "y": 270}
-  }
-}

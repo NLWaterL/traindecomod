@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "traindeco:item/light_blue_line_train_door"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "traindeco:block/light_blue_line_train_wall",
-    "side": "traindeco:block/train_wall_sides2",
-    "top": "traindeco:block/train_wall_sides2"
-  }
-}

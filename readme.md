@@ -3,9 +3,13 @@
 Important / 重要
 ---
 
-This mod currently only work with Create 0.5.1f and minecraft 1.20.1.
+This mod currently only work with minecraft 1.20.1.
 
-这个模组目前只能在机械动力0.5.1f - mc1.20.1版本运行
+这个模组目前只能在mc1.20.1版本运行
+
+v0.1.0 -> Create 0.5.1f
+
+v0.1.1 -> Create 0.6
 
 
 ---

@@ -23,8 +23,9 @@ public class TrainLineDoorMovingInteraction extends SimpleBlockMovingInteraction
             return currentState;
 
         boolean trainDoor = currentState.getBlock() instanceof TrainLineSlidingDoorBlock;
-        SoundEvent sound = currentState.getValue(DoorBlock.OPEN) ? trainDoor ? null : SoundEvents.WOODEN_DOOR_CLOSE
-                : trainDoor ? SoundEvents.IRON_DOOR_OPEN : SoundEvents.WOODEN_DOOR_OPEN;
+        SoundEvent sound = currentState.getValue(DoorBlock.OPEN)
+                ? SoundEvents.IRON_DOOR_CLOSE
+                : SoundEvents.IRON_DOOR_OPEN;
 
         BlockPos otherPos = currentState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
@@ -49,9 +50,8 @@ public class TrainLineDoorMovingInteraction extends SimpleBlockMovingInteraction
                     handlePlayerInteraction(null, InteractionHand.MAIN_HAND, doublePos, contraption.entity);
             }
 
-            float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
             if (sound != null)
-                playSound(player, sound, pitch);
+                playSound(player, sound, 1);
         }
 
         return currentState;

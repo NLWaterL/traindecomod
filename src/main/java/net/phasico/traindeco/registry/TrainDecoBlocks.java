@@ -5,6 +5,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.phasico.traindeco.TrainDecoMod;
 import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlock;
+import net.phasico.traindeco.registry.TrainDecoBuilderTransformer;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraft.world.level.material.MapColor;
@@ -112,6 +113,8 @@ public class TrainDecoBlocks {
             QUARTZ_WHITE_LINE_TRAIN_WALL = TrainDecoBuilderTransformer.linedTrainWall("quartz_white_line_train_wall");
     public static final BlockEntry<CarvedPumpkinBlock>
             QUARTZ_BROWN_LINE_TRAIN_WALL = TrainDecoBuilderTransformer.linedTrainWall("quartz_brown_line_train_wall");
+
+    public BlockEntry<TrainLineSlidingDoorBlock> train_door;
 
 
     public static final BlockEntry<TrainLineSlidingDoorBlock> RED_LINE_TRAIN_DOOR =

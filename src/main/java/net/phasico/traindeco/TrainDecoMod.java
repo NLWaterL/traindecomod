@@ -7,7 +7,6 @@ import net.phasico.traindeco.registry.TrainDecoEntityTypes;
 import net.phasico.traindeco.registry.TrainDecoTabs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

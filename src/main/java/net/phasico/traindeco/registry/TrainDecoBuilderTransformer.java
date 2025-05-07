@@ -1,7 +1,5 @@
 package net.phasico.traindeco.registry;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllCreativeModeTabs;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.entry.BlockEntry;
@@ -15,14 +13,14 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
-import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
-import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
 
+import static com.simibubi.create.api.behaviour.interaction.MovingInteractionBehaviour.interactionBehaviour;
+import static com.simibubi.create.api.behaviour.movement.MovementBehaviour.movementBehaviour;
 
 @SuppressWarnings({"unused","removal"})
 public class TrainDecoBuilderTransformer {
-    private static final CreateRegistrate REGISTRATE = TrainDecoMod.REGISTRATE.setCreativeTab(AllCreativeModeTabs.PALETTES_CREATIVE_TAB);
-
+    private static final CreateRegistrate REGISTRATE = TrainDecoMod.REGISTRATE.setCreativeTab(TrainDecoTabs.TRAIN_DECO);
+    
     //The easiest way to make the block directional…… PUMPKINS!
     public static BlockEntry<CarvedPumpkinBlock> linedTrainWall(String name) {
         return REGISTRATE.block(name, CarvedPumpkinBlock::new)
@@ -51,10 +49,9 @@ public class TrainDecoBuilderTransformer {
 
     public static BlockEntry<TrainLineSlidingDoorBlock> trainLineSlidingDoor(String type, MapColor colour) {
         return REGISTRATE.block(type + "_door", TrainLineSlidingDoorBlock::new)
-                .initialProperties(AllBlocks.FRAMED_GLASS_DOOR)
-                .properties(p -> p.sound(SoundType.GLASS).mapColor(colour))
+                .properties(p -> p.sound(SoundType.GLASS).mapColor(colour).noOcclusion())
                 .transform(TrainDecoBuilderTransformer.slidingDoor(type))
-                .properties(BlockBehaviour.Properties::noOcclusion)
                 .register();
     }
+
 }

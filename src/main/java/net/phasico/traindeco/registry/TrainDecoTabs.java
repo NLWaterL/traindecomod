@@ -1,12 +1,14 @@
 package net.phasico.traindeco.registry;
 
 import net.phasico.traindeco.TrainDecoMod;
-import com.simibubi.create.foundation.utility.Components;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.loading.FMLLoader;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
@@ -17,11 +19,11 @@ public class TrainDecoTabs {
     private static final DeferredRegister<CreativeModeTab> REGISTER =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TrainDecoMod.ID);
 
-    public static final RegistryObject<CreativeModeTab> CREATE_FRAMED = REGISTER.register("train_deco",
+    public static final RegistryObject<CreativeModeTab> TRAIN_DECO = REGISTER.register("train_deco",
             () -> CreativeModeTab.builder()
-                    .title(Components.translatable("itemGroup.traindeco.train_deco"))
+                    .title(Component.translatable("itemGroup.traindeco.train_deco"))
                     .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-                    .icon(TrainDecoBlocks.RED_LINE_STATION_WALL::asStack)
+                    .icon(TrainDecoBlocks.CYAN_LINE_TRAIN_DOOR::asStack)
                     .displayItems(new ItemsGenerator())
                     .build());
 

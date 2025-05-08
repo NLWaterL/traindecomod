@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "train_wall",
+  "key": {
+    "Y": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "YXY",
+    "YYY"
+  ],
+  "result": {
+    "count": 8,
+    "item": "traindeco:blue_line_train_wall"
+  },
+  "show_notification": true
+}

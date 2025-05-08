@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "quartz_train_wall",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:smooth_quartz"
+    },
+    {
+      "item": "traindeco:light_gray_line_train_wall"
+    }
+  ],
+  "result": {
+    "item": "traindeco:quartz_light_gray_line_train_wall"
+  }
+}

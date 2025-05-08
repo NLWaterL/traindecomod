@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "station_wall",
+  "key": {
+  "X": {
+      "item": "traindeco:pink_line_train_wall"
+    }
+  },
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "result": {
+    "count": 4,
+    "item": "traindeco:pink_line_station_wall"
+  },
+  "show_notification": true
+}

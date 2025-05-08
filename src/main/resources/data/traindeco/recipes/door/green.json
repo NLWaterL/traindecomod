@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "train_door",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_door"
+    },
+    {
+      "item": "traindeco:green_line_train_wall"
+    }
+  ],
+  "result": {
+    "item": "traindeco:green_line_train_door"
+  }
+}

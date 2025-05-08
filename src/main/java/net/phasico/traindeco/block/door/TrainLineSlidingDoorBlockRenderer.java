@@ -47,7 +47,7 @@ public class TrainLineSlidingDoorBlockRenderer extends SlidingDoorRenderer {
         float value = be2.animation.getValue(partialTicks);
         float value2 = Mth.clamp(value * 10, 0, 1);
 
-        VertexConsumer vb = buffer.getBuffer(RenderType.translucent());
+        VertexConsumer vb = buffer.getBuffer(RenderType.cutout());
         Vec3 offset = Vec3.atLowerCornerOf(movementDirection.getNormal())
                 .scale(value * value * 13 / 16f)
                 .add(Vec3.atLowerCornerOf(facing.getNormal())

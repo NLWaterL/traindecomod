@@ -40,7 +40,7 @@ public class TrainDecoBuilderTransformer {
 
     public static <B extends TrainLineSlidingDoorBlock, P> NonNullUnaryOperator<BlockBuilder<B, P>> slidingDoor(String type) {
         return b -> b.properties(p -> p.strength(3.0F, 6.0F))
-                .addLayer(() -> RenderType::translucent)
+                .addLayer(() -> RenderType::cutout)
                 .onRegister(interactionBehaviour(new TrainLineDoorMovingInteraction()))
                 .onRegister(movementBehaviour(new TrainLineSlidingDoorMovementBehaviour()))
                 .item()

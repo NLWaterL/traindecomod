@@ -40,10 +40,6 @@ I am planning to add these things (Long term plans):
 ---
 Other things
 ---
-I am doing this now:
-Add compatibility to Create 6.x for 1.20.1 minecraft (Currently only work with 5.x)
-
-
 BUT probably not going to 1.21.1 minecraft for short. (There is no forge!) 
 
 If you have any suggestions, you can tell me but I'm sorry that I may not
@@ -78,8 +74,6 @@ respond very quickly.
 ---
 其他东西
 ---
-目前在给机械动力6.x - mc1.20.1版本做支持，现在只能用0.5.1f。
-
-但是近期不会搞mc1.21.1版本，因为没有forge（有时间我去试一下neoforge）
+近期不会搞mc1.21.1版本，因为没有forge（有时间我去试一下neoforge）
 
 有任何建议可以发，但是我时间是在很少，不一定能很快回复。（

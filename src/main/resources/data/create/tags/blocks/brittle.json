@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "traindeco:red_line_train_door",
+    "traindeco:orange_line_train_door",
+    "traindeco:yellow_line_train_door",
+    "traindeco:green_line_train_door",
+    "traindeco:lime_line_train_door",
+    "traindeco:blue_line_train_door",
+    "traindeco:light_blue_line_train_door",
+    "traindeco:cyan_line_train_door",
+    "traindeco:purple_line_train_door",
+    "traindeco:magenta_line_train_door",
+    "traindeco:pink_line_train_door",
+    "traindeco:black_line_train_door",
+    "traindeco:gray_line_train_door",
+    "traindeco:light_gray_line_train_door",
+    "traindeco:white_line_train_door",
+    "traindeco:brown_line_train_door"
+    ]
+}

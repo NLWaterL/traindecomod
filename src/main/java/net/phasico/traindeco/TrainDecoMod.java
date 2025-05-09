@@ -2,6 +2,7 @@ package net.phasico.traindeco;
 
 import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
+import net.phasico.traindeco.registry.TrainDecoSoundEvent;
 import net.phasico.traindeco.registry.TrainDecoBlocks;
 import net.phasico.traindeco.registry.TrainDecoEntityTypes;
 import net.phasico.traindeco.registry.TrainDecoTabs;
@@ -34,6 +35,7 @@ public class TrainDecoMod {
         // IEventBus forgeBus = MinecraftForge.EVENT_BUS;
         REGISTRATE.registerEventListeners(bus);
 
+        TrainDecoSoundEvent.register();
         TrainDecoBlocks.register();
         TrainDecoEntityTypes.register();
         TrainDecoTabs.register(bus);

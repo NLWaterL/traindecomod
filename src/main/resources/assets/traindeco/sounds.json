@@ -1,0 +1,11 @@
+{
+  "door_closing_alarm": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "traindeco:door_closing_alarm",
+        "stream": false
+      }
+    ]
+  }
+}

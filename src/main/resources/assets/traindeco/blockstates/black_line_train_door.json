@@ -20,7 +20,7 @@
     "facing=east,half=lower,hinge=right,open=false,visible=true": {
       "model": "traindeco:block/black_line_train_door/block_bottom"
     },
-    "facing=east,half=lower,hinge=right,op`en=true,visible=false": {
+    "facing=east,half=lower,hinge=right,open=true,visible=false": {
       "model": "traindeco:block/black_line_train_door/block_bottom",
       "y": 270
     },

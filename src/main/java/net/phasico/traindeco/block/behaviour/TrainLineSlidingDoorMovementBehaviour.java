@@ -1,4 +1,3 @@
-
 package net.phasico.traindeco.block.behaviour;
 
 import com.simibubi.create.api.behaviour.movement.MovementBehaviour;
@@ -28,6 +27,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.phys.Vec3;
+import net.phasico.traindeco.registry.TrainDecoSoundEvent;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
@@ -46,6 +46,7 @@ public class TrainLineSlidingDoorMovementBehaviour implements MovementBehaviour 
 
     @Override
     public void tick(MovementContext context) {
+
         StructureTemplate.StructureBlockInfo structureBlockInfo = context.contraption.getBlocks()
                 .get(context.localPos);
         if (structureBlockInfo == null)
@@ -59,12 +60,23 @@ public class TrainLineSlidingDoorMovementBehaviour implements MovementBehaviour 
         if (!(tes.get(context.localPos) instanceof TrainLineSlidingDoorBlockEntity sdbe))
             return;
         boolean wasSettled = sdbe.animation.settled();
-        sdbe.animation.chase(open ? 1 : 0, .15f, LerpedFloat.Chaser.LINEAR);
+        sdbe.animation.chase(open ? 1 : 0, .05f, LerpedFloat.Chaser.LINEAR);
         sdbe.animation.tickChaser();
 
         if (!wasSettled && sdbe.animation.settled() && !open)
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                     SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, .125f, 1, false);
+
+        float previousValue = sdbe.animation.getValue();
+        float newValue = sdbe.animation.getValue();
+
+        if (previousValue > 0.01f && newValue < previousValue && !open) {
+            // Door just started closing
+            context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
+                    TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get(), SoundSource.BLOCKS, 0.4f, 1.0f, true
+            );
+        }
+
     }
 
     protected void tickOpen(MovementContext context, boolean currentlyOpen) {

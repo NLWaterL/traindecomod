@@ -2,11 +2,12 @@ package net.phasico.traindeco.block.behaviour;
 
 import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.contraptions.behaviour.SimpleBlockMovingInteraction;
-import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlock;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlock;
+import net.phasico.traindeco.registry.TrainDecoSoundEvent;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.DoorBlock;
@@ -24,8 +25,11 @@ public class TrainLineDoorMovingInteraction extends SimpleBlockMovingInteraction
 
         boolean trainDoor = currentState.getBlock() instanceof TrainLineSlidingDoorBlock;
         SoundEvent sound = currentState.getValue(DoorBlock.OPEN)
-                ? SoundEvents.IRON_DOOR_CLOSE
+                ? null
                 : SoundEvents.IRON_DOOR_OPEN;
+        SoundEvent alarm = currentState.getValue(DoorBlock.OPEN)
+                ? TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get()
+                : null;
 
         BlockPos otherPos = currentState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
@@ -50,8 +54,13 @@ public class TrainLineDoorMovingInteraction extends SimpleBlockMovingInteraction
                     handlePlayerInteraction(null, InteractionHand.MAIN_HAND, doublePos, contraption.entity);
             }
 
-            if (sound != null)
-                playSound(player, sound, 1);
+        }
+
+        float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
+        if (sound != null)
+            playSound(player, sound, pitch);
+        if (alarm != null) {
+            playSound(player, alarm, 1);
         }
 
         return currentState;

@@ -34,7 +34,7 @@ public class TrainDecoBlocks {
     public static final BlockEntry<CarvedPumpkinBlock>
             PURPLE_LINE_TRAIN_WALL = TrainDecoBuilderTransformer.linedTrainWall("purple_line_train_wall");
     public static final BlockEntry<CarvedPumpkinBlock>
-            MAGENTA_LINE_TRAIN_WALL = TrainDecoBuilderTransformer.linedTrainWall("magenta_line_station_wall");
+            MAGENTA_LINE_TRAIN_WALL = TrainDecoBuilderTransformer.linedTrainWall("magenta_line_train_wall");
     public static final BlockEntry<CarvedPumpkinBlock>
             PINK_LINE_TRAIN_WALL = TrainDecoBuilderTransformer.linedTrainWall("pink_line_train_wall");
     public static final BlockEntry<CarvedPumpkinBlock>

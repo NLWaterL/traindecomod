@@ -2,25 +2,16 @@ package net.phasico.traindeco.block.door;
 
 import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlock;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.DoorBlock;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
-import net.minecraft.world.phys.BlockHitResult;
 import net.phasico.traindeco.registry.TrainDecoEntityTypes;
-
-
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.phasico.traindeco.registry.TrainDecoSoundEvent;
-
 import javax.annotation.Nullable;
 
 public class TrainLineSlidingDoorBlock extends SlidingDoorBlock {
@@ -29,10 +20,15 @@ public class TrainLineSlidingDoorBlock extends SlidingDoorBlock {
     }
 
 
-    protected void playAlarmSound(@Nullable Entity source, Level level, BlockPos pos, boolean isOpen){
+    // I thought making the block door also with the sound is a good idea, but there are so many bugs about it and I couldn't fix all of them.
+    // Mainly because the animation problem. If I set BlockEntity's speed to 0.5f, the door will shut before the animation stop.
+    // This feature may come back in later version.
+
+    /*protected void playAlarmSound(@Nullable Entity source, Level level, BlockPos pos, boolean isOpen){
+
         if (!isOpen) {
             SoundEvent alarm = TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get();
-            level.playSound(source, pos, alarm, SoundSource.BLOCKS, 1.0f, 1.0f);
+            level.playSound(source, pos, alarm, SoundSource.BLOCKS, 0.25f, 1.0f);
         }
         }
 
@@ -56,32 +52,8 @@ public class TrainLineSlidingDoorBlock extends SlidingDoorBlock {
         if (isPowered != state.getValue(OPEN)) {
             this.playAlarmSound(null, level, pos, isPowered);
         }
-    }
+    }*/
 
-
-    //will be deleted very soon
-    @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit){
-        boolean isOpen = state.getValue(DoorBlock.OPEN);
-        InteractionResult result = super.use(state, level, pos, player, hand, hit);
-
-        if (isOpen) {
-            this.playAlarmSound(player, level, pos, isOpen);
-            }
-
-        return result;
-    }
-
-    /*@Override
-    public void setOpen(@Nullable Entity entity, Level level, BlockState state, BlockPos pos, boolean open) {
-        super.setOpen(entity, level, state, pos, open);
-        if (!state.is(this))
-            return;
-        if (state.getValue(OPEN) == open)
-            return;
-
-        this.playAlarmSound(entity, level, pos, open);
-        }*/
 
     @Override
     public BlockEntityType<? extends TrainLineSlidingDoorBlockEntity> getBlockEntityType() {

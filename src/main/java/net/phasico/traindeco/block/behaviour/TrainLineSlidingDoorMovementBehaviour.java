@@ -44,8 +44,16 @@ public class TrainLineSlidingDoorMovementBehaviour implements MovementBehaviour 
         return true;
     }
 
+    private int hasPlaySound;
+
     @Override
     public void tick(MovementContext context) {
+
+        hasPlaySound = context.data.getInt("hasPlaySound");
+
+        hasPlaySound++;  //60tick = 3 sec
+
+        context.data.putInt("hasPlaySound", hasPlaySound);
 
         StructureTemplate.StructureBlockInfo structureBlockInfo = context.contraption.getBlocks()
                 .get(context.localPos);
@@ -61,20 +69,19 @@ public class TrainLineSlidingDoorMovementBehaviour implements MovementBehaviour 
             return;
         boolean wasSettled = sdbe.animation.settled();
         sdbe.animation.chase(open ? 1 : 0, .05f, LerpedFloat.Chaser.LINEAR);
+        float previousValue = sdbe.animation.getValue();
         sdbe.animation.tickChaser();
+        float newValue = sdbe.animation.getValue();
 
         if (!wasSettled && sdbe.animation.settled() && !open)
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                     SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, .125f, 1, false);
 
-        float previousValue = sdbe.animation.getValue();
-        float newValue = sdbe.animation.getValue();
-
-        if (previousValue > 0.01f && newValue < previousValue && !open) {
-            // Door just started closing
+        if (previousValue > 0.01f && newValue < previousValue && !open && hasPlaySound >= 60) {
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                    TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get(), SoundSource.BLOCKS, 0.4f, 1.0f, true
-            );
+                    TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get(), SoundSource.BLOCKS, 0.125f, 1.0f, false);
+            hasPlaySound = 0;
+            context.data.putInt("hasPlaySound", hasPlaySound);
         }
 
     }

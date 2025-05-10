@@ -4,6 +4,7 @@ import com.simibubi.create.content.contraptions.Contraption;
 import com.simibubi.create.content.contraptions.behaviour.SimpleBlockMovingInteraction;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.phasico.traindeco.block.behaviour.TrainLineSlidingDoorMovementBehaviour;
 import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlock;
 import net.phasico.traindeco.registry.TrainDecoSoundEvent;
 import net.minecraft.core.BlockPos;
@@ -24,12 +25,12 @@ public class TrainLineDoorMovingInteraction extends SimpleBlockMovingInteraction
             return currentState;
 
         boolean trainDoor = currentState.getBlock() instanceof TrainLineSlidingDoorBlock;
-        SoundEvent sound = currentState.getValue(DoorBlock.OPEN)
-                ? null
+        SoundEvent sound = currentState.getValue(DoorBlock.OPEN)  //This IRON_DOOR_CLOSE Will be played when the door is clicked, not when the door shut. So not good.
+                ? null  //The soundeffect will be played in movement behaviour!
                 : SoundEvents.IRON_DOOR_OPEN;
-        SoundEvent alarm = currentState.getValue(DoorBlock.OPEN)
+        /*SoundEvent alarm = currentState.getValue(DoorBlock.OPEN)
                 ? TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get()
-                : null;
+                : null;*/
 
         BlockPos otherPos = currentState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
@@ -59,9 +60,9 @@ public class TrainLineDoorMovingInteraction extends SimpleBlockMovingInteraction
         float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
         if (sound != null)
             playSound(player, sound, pitch);
-        if (alarm != null) {
+        /*if (alarm != null) {
             playSound(player, alarm, 1);
-        }
+        }*/
 
         return currentState;
     }

@@ -27,7 +27,7 @@ public class TrainLineSlidingDoorBlockEntity extends SlidingDoorBlockEntity {
         }
         boolean open = isOpen(getBlockState());
         boolean wasSettled = animation.settled();
-        animation.chase(open ? 1 : 0, .30f, LerpedFloat.Chaser.LINEAR);
+        animation.chase(open ? 1 : 0, .15f, LerpedFloat.Chaser.LINEAR);
         animation.tickChaser();
 
         if (!open && !wasSettled && animation.settled() && !isVisible(getBlockState()))

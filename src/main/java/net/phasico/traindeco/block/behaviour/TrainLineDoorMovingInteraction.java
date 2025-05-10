@@ -55,14 +55,14 @@ public class TrainLineDoorMovingInteraction extends SimpleBlockMovingInteraction
                     handlePlayerInteraction(null, InteractionHand.MAIN_HAND, doublePos, contraption.entity);
             }
 
-        }
-
-        float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
-        if (sound != null)
-            playSound(player, sound, pitch);
+            float pitch = player.level().random.nextFloat() * 0.1F + 0.9F;
+            if (sound != null)
+                playSound(player, sound, pitch);
         /*if (alarm != null) {
             playSound(player, alarm, 1);
         }*/
+
+        }
 
         return currentState;
     }

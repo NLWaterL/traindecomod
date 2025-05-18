@@ -103,8 +103,9 @@ public class TrainLineSlidingDoorBlock extends SlidingDoorBlock {
             }
             return InteractionResult.CONSUME;
         }
-
-        return super.use(state, level, pos, player, hand, hit);
+        else {
+            return super.use(state, level, pos, player, hand, hit);
+        }
     }
 
     // I thought making the block door also with the sound is a good idea, but there are so many bugs about it and I couldn't fix all of them.

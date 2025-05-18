@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:black_wool"
+    }
+  },
+  "pattern": [
+    "X X",
+    " X ",
+    "X X"
+  ],
+  "result": {
+    "item": "traindeco:mute"
+  },
+  "show_notification": true
+}

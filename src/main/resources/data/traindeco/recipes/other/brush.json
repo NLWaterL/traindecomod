@@ -16,4 +16,5 @@
   "result": {
     "item": "traindeco:brush"
   },
- }
+  "show_notification": true
+}

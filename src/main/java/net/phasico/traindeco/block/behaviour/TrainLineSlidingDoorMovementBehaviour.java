@@ -12,7 +12,6 @@ import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 import net.createmod.catnip.animation.LerpedFloat;
-import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceKey;
@@ -27,7 +26,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.phys.Vec3;
+import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlock;
 import net.phasico.traindeco.registry.TrainDecoSoundEvents;
+import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlockEntity;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
@@ -59,7 +60,13 @@ public class TrainLineSlidingDoorMovementBehaviour implements MovementBehaviour 
                 .get(context.localPos);
         if (structureBlockInfo == null)
             return;
-        boolean open = TrainLineSlidingDoorBlockEntity.isOpen(structureBlockInfo.state());
+
+        BlockState state = structureBlockInfo.state();
+
+        boolean open = TrainLineSlidingDoorBlockEntity.isOpen(state);
+
+        boolean shouldPlayAlarm = state.hasProperty(TrainLineSlidingDoorBlock.PLAYALARM)
+                && state.getValue(TrainLineSlidingDoorBlock.PLAYALARM);
 
         if (!context.world.isClientSide())
             tickOpen(context, open);
@@ -77,9 +84,9 @@ public class TrainLineSlidingDoorMovementBehaviour implements MovementBehaviour 
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
                     SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, 0.125f, 1.0f, false);
 
-        if (previousValue > 0.01f && newValue < previousValue && !open && hasPlaySound >= 60) {
+        if (previousValue > 0.01f && newValue < previousValue && !open && hasPlaySound >= 60 && shouldPlayAlarm) {
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                    TrainDecoSoundEvents.DOOR_CLOSING_ALARM.get(), SoundSource.BLOCKS, 0.125f, 1.0f, false);
+                    TrainDecoSoundEvents.DOOR_CLOSING_ALARM.get(), SoundSource.BLOCKS, 0.25f, 1.0f, false);
             hasPlaySound = 0;
             context.data.putInt("hasPlaySound", hasPlaySound);
         }

@@ -10,7 +10,6 @@ import net.phasico.traindeco.block.behaviour.TrainLineSlidingDoorMovementBehavio
 import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlock;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
 

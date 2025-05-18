@@ -67,6 +67,10 @@
   "block.traindeco.gray_line_train_door": "灰色地铁车厢门",
   "block.traindeco.light_gray_line_train_door": "浅灰色地铁车厢门",
   "block.traindeco.white_line_train_door": "银白色地铁车厢门",
-  "block.traindeco.brown_line_train_door": "棕色地铁车厢门"
+  "block.traindeco.brown_line_train_door": "棕色地铁车厢门",
+
+  "item.traindeco.brush": "刷子",
+  "item.traindeco.mute": "车门静音装置"
+
 
   }

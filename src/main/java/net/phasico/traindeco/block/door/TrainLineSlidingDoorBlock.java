@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.phasico.traindeco.registry.TrainDecoEntityTypes;
+import net.phasico.traindeco.registry.TrainDecoItems;
 
 public class TrainLineSlidingDoorBlock extends SlidingDoorBlock {
 
@@ -57,7 +58,7 @@ public class TrainLineSlidingDoorBlock extends SlidingDoorBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!level.isClientSide() && player.getItemInHand(hand).is(Items.STICK)) {
+        if (!level.isClientSide() && player.getItemInHand(hand).is(TrainDecoItems.BRUSH.get())) {
             BlockPos basePos = state.getValue(HALF) == DoubleBlockHalf.UPPER ? pos.below() : pos;
             BlockPos upperPos = basePos.above();
 
@@ -78,7 +79,7 @@ public class TrainLineSlidingDoorBlock extends SlidingDoorBlock {
             player.displayClientMessage(Component.literal("Set style to: " + next.getSerializedName()), true);
             return InteractionResult.CONSUME;
         }
-        if (!level.isClientSide() && player.getItemInHand(hand).is(Items.IRON_INGOT)) {
+        if (!level.isClientSide() && player.getItemInHand(hand).is(TrainDecoItems.MUTE.get())) {
             BlockPos basePos = state.getValue(HALF) == DoubleBlockHalf.UPPER ? pos.below() : pos;
             BlockPos upperPos = basePos.above();
 
@@ -113,7 +114,7 @@ public class TrainLineSlidingDoorBlock extends SlidingDoorBlock {
     /*protected void playAlarmSound(@Nullable Entity source, Level level, BlockPos pos, boolean isOpen){
 
         if (!isOpen) {
-            SoundEvent alarm = TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get();
+            SoundEvent alarm = TrainDecoSoundEvents.DOOR_CLOSING_ALARM.get();
             level.playSound(source, pos, alarm, SoundSource.BLOCKS, 0.25f, 1.0f);
         }
         }

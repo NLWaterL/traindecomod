@@ -1,242 +1,723 @@
 {
   "variants": {
-    "facing=east,half=lower,hinge=left,open=false,visible=false": {
+    "facing=east,half=lower,hinge=left,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom"
     },
-    "facing=east,half=lower,hinge=left,open=false,visible=true": {
+    "facing=east,half=lower,hinge=left,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom"
     },
-    "facing=east,half=lower,hinge=left,open=true,visible=false": {
+    "facing=east,half=lower,hinge=left,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 90
     },
-    "facing=east,half=lower,hinge=left,open=true,visible=true": {
+    "facing=east,half=lower,hinge=left,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 90
     },
-    "facing=east,half=lower,hinge=right,open=false,visible=false": {
+    "facing=east,half=lower,hinge=right,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom"
     },
-    "facing=east,half=lower,hinge=right,open=false,visible=true": {
+    "facing=east,half=lower,hinge=right,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom"
     },
-    "facing=east,half=lower,hinge=right,open=true,visible=false": {
+    "facing=east,half=lower,hinge=right,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 270
     },
-    "facing=east,half=lower,hinge=right,open=true,visible=true": {
+    "facing=east,half=lower,hinge=right,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 270
     },
-    "facing=east,half=upper,hinge=left,open=false,visible=false": {
+    "facing=east,half=upper,hinge=left,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top"
     },
-    "facing=east,half=upper,hinge=left,open=false,visible=true": {
+    "facing=east,half=upper,hinge=left,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top"
     },
-    "facing=east,half=upper,hinge=left,open=true,visible=false": {
+    "facing=east,half=upper,hinge=left,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 90
     },
-    "facing=east,half=upper,hinge=left,open=true,visible=true": {
+    "facing=east,half=upper,hinge=left,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 90
     },
-    "facing=east,half=upper,hinge=right,open=false,visible=false": {
+    "facing=east,half=upper,hinge=right,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top"
     },
-    "facing=east,half=upper,hinge=right,open=false,visible=true": {
+    "facing=east,half=upper,hinge=right,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top"
     },
-    "facing=east,half=upper,hinge=right,open=true,visible=false": {
+    "facing=east,half=upper,hinge=right,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 270
     },
-    "facing=east,half=upper,hinge=right,open=true,visible=true": {
+    "facing=east,half=upper,hinge=right,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 270
     },
-    "facing=north,half=lower,hinge=left,open=false,visible=false": {
+    "facing=north,half=lower,hinge=left,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 270
     },
-    "facing=north,half=lower,hinge=left,open=false,visible=true": {
+    "facing=north,half=lower,hinge=left,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 270
     },
-    "facing=north,half=lower,hinge=left,open=true,visible=false": {
+    "facing=north,half=lower,hinge=left,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom"
     },
-    "facing=north,half=lower,hinge=left,open=true,visible=true": {
+    "facing=north,half=lower,hinge=left,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom"
     },
-    "facing=north,half=lower,hinge=right,open=false,visible=false": {
+    "facing=north,half=lower,hinge=right,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 270
     },
-    "facing=north,half=lower,hinge=right,open=false,visible=true": {
+    "facing=north,half=lower,hinge=right,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 270
     },
-    "facing=north,half=lower,hinge=right,open=true,visible=false": {
-      "model": "traindeco:block/pink_line_train_door/block_bottom",
-      "y": 180
-    },
-    "facing=north,half=lower,hinge=right,open=true,visible=true": {
+    "facing=north,half=lower,hinge=right,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 180
     },
-    "facing=north,half=upper,hinge=left,open=false,visible=false": {
+    "facing=north,half=lower,hinge=right,open=true,visible=true,style=both": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 270
     },
-    "facing=north,half=upper,hinge=left,open=false,visible=true": {
+    "facing=north,half=upper,hinge=left,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 270
     },
-    "facing=north,half=upper,hinge=left,open=true,visible=false": {
+    "facing=north,half=upper,hinge=left,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top"
     },
-    "facing=north,half=upper,hinge=left,open=true,visible=true": {
+    "facing=north,half=upper,hinge=left,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top"
     },
-    "facing=north,half=upper,hinge=right,open=false,visible=false": {
+    "facing=north,half=upper,hinge=right,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 270
     },
-    "facing=north,half=upper,hinge=right,open=false,visible=true": {
+    "facing=north,half=upper,hinge=right,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 270
     },
-    "facing=north,half=upper,hinge=right,open=true,visible=false": {
+    "facing=north,half=upper,hinge=right,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 180
     },
-    "facing=north,half=upper,hinge=right,open=true,visible=true": {
+    "facing=north,half=upper,hinge=right,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 180
     },
-    "facing=south,half=lower,hinge=left,open=false,visible=false": {
+    "facing=south,half=lower,hinge=left,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 90
     },
-    "facing=south,half=lower,hinge=left,open=false,visible=true": {
+    "facing=south,half=lower,hinge=left,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 90
     },
-    "facing=south,half=lower,hinge=left,open=true,visible=false": {
+    "facing=south,half=lower,hinge=left,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 180
     },
-    "facing=south,half=lower,hinge=left,open=true,visible=true": {
+    "facing=south,half=lower,hinge=left,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 180
     },
-    "facing=south,half=lower,hinge=right,open=false,visible=false": {
+    "facing=south,half=lower,hinge=right,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 90
     },
-    "facing=south,half=lower,hinge=right,open=false,visible=true": {
+    "facing=south,half=lower,hinge=right,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 90
     },
-    "facing=south,half=lower,hinge=right,open=true,visible=false": {
+    "facing=south,half=lower,hinge=right,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom"
     },
-    "facing=south,half=lower,hinge=right,open=true,visible=true": {
+    "facing=south,half=lower,hinge=right,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom"
     },
-    "facing=south,half=upper,hinge=left,open=false,visible=false": {
+    "facing=south,half=upper,hinge=left,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 90
     },
-    "facing=south,half=upper,hinge=left,open=false,visible=true": {
+    "facing=south,half=upper,hinge=left,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 90
     },
-    "facing=south,half=upper,hinge=left,open=true,visible=false": {
+    "facing=south,half=upper,hinge=left,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 180
     },
-    "facing=south,half=upper,hinge=left,open=true,visible=true": {
+    "facing=south,half=upper,hinge=left,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 180
     },
-    "facing=south,half=upper,hinge=right,open=false,visible=false": {
+    "facing=south,half=upper,hinge=right,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 90
     },
-    "facing=south,half=upper,hinge=right,open=false,visible=true": {
+    "facing=south,half=upper,hinge=right,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 90
     },
-    "facing=south,half=upper,hinge=right,open=true,visible=false": {
+    "facing=south,half=upper,hinge=right,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top"
     },
-    "facing=south,half=upper,hinge=right,open=true,visible=true": {
+    "facing=south,half=upper,hinge=right,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top"
     },
-    "facing=west,half=lower,hinge=left,open=false,visible=false": {
+    "facing=west,half=lower,hinge=left,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 180
     },
-    "facing=west,half=lower,hinge=left,open=false,visible=true": {
+    "facing=west,half=lower,hinge=left,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 180
     },
-    "facing=west,half=lower,hinge=left,open=true,visible=false": {
+    "facing=west,half=lower,hinge=left,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 270
     },
-    "facing=west,half=lower,hinge=left,open=true,visible=true": {
+    "facing=west,half=lower,hinge=left,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 270
     },
-    "facing=west,half=lower,hinge=right,open=false,visible=false": {
+    "facing=west,half=lower,hinge=right,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 180
     },
-    "facing=west,half=lower,hinge=right,open=false,visible=true": {
+    "facing=west,half=lower,hinge=right,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 180
     },
-    "facing=west,half=lower,hinge=right,open=true,visible=false": {
+    "facing=west,half=lower,hinge=right,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 90
     },
-    "facing=west,half=lower,hinge=right,open=true,visible=true": {
+    "facing=west,half=lower,hinge=right,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_bottom",
       "y": 90
     },
-    "facing=west,half=upper,hinge=left,open=false,visible=false": {
+    "facing=west,half=upper,hinge=left,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 180
     },
-    "facing=west,half=upper,hinge=left,open=false,visible=true": {
+    "facing=west,half=upper,hinge=left,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 180
     },
-    "facing=west,half=upper,hinge=left,open=true,visible=false": {
+    "facing=west,half=upper,hinge=left,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 270
     },
-    "facing=west,half=upper,hinge=left,open=true,visible=true": {
+    "facing=west,half=upper,hinge=left,open=true,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 270
     },
-    "facing=west,half=upper,hinge=right,open=false,visible=false": {
+    "facing=west,half=upper,hinge=right,open=false,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 180
     },
-    "facing=west,half=upper,hinge=right,open=false,visible=true": {
+    "facing=west,half=upper,hinge=right,open=false,visible=true,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 180
     },
-    "facing=west,half=upper,hinge=right,open=true,visible=false": {
+    "facing=west,half=upper,hinge=right,open=true,visible=false,style=both": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 90
     },
-    "facing=west,half=upper,hinge=right,open=true,visible=true": {
+    "facing=west,half=upper,hinge=right,open=true,visible=true,style=both": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+
+    "facing=east,half=lower,hinge=left,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front"
+    },
+    "facing=east,half=lower,hinge=left,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front"
+    },
+    "facing=east,half=lower,hinge=left,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 90
+    },
+    "facing=east,half=lower,hinge=left,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 90
+    },
+    "facing=east,half=lower,hinge=right,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front"
+    },
+    "facing=east,half=lower,hinge=right,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front"
+    },
+    "facing=east,half=lower,hinge=right,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=right,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=left,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=east,half=upper,hinge=left,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=east,half=upper,hinge=left,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=east,half=upper,hinge=left,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=east,half=upper,hinge=right,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=east,half=upper,hinge=right,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=east,half=upper,hinge=right,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=right,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front"
+    },
+    "facing=north,half=lower,hinge=left,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front"
+    },
+    "facing=north,half=lower,hinge=right,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=right,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=right,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=right,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=north,half=upper,hinge=left,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=north,half=upper,hinge=right,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=right,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=right,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=right,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=left,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=left,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=right,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=right,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=right,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front"
+    },
+    "facing=south,half=lower,hinge=right,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front"
+    },
+    "facing=south,half=upper,hinge=left,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=south,half=upper,hinge=left,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=south,half=upper,hinge=right,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=right,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=right,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=south,half=upper,hinge=right,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=west,half=lower,hinge=left,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 270
+    },
+    "facing=west,half=lower,hinge=left,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 270
+    },
+    "facing=west,half=lower,hinge=right,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=right,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=right,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=right,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_front",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=left,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=west,half=upper,hinge=left,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=west,half=upper,hinge=right,open=false,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=right,open=false,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=right,open=true,visible=false,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=right,open=true,visible=true,style=front": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=east,half=lower,hinge=left,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back"
+    },
+    "facing=east,half=lower,hinge=left,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back"
+    },
+    "facing=east,half=lower,hinge=left,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 90
+    },
+    "facing=east,half=lower,hinge=left,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 90
+    },
+    "facing=east,half=lower,hinge=right,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back"
+    },
+    "facing=east,half=lower,hinge=right,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back"
+    },
+    "facing=east,half=lower,hinge=right,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 270
+    },
+    "facing=east,half=lower,hinge=right,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=left,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=east,half=upper,hinge=left,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=east,half=upper,hinge=left,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=east,half=upper,hinge=left,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=east,half=upper,hinge=right,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=east,half=upper,hinge=right,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=east,half=upper,hinge=right,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=right,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back"
+    },
+    "facing=north,half=lower,hinge=left,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back"
+    },
+    "facing=north,half=lower,hinge=right,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=right,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=right,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 180
+    },
+    "facing=north,half=lower,hinge=right,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=north,half=upper,hinge=left,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=north,half=upper,hinge=right,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=right,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=right,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=right,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=left,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=left,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=right,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=right,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=right,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back"
+    },
+    "facing=south,half=lower,hinge=right,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back"
+    },
+    "facing=south,half=upper,hinge=left,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=south,half=upper,hinge=left,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=south,half=upper,hinge=right,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=right,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=right,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=south,half=upper,hinge=right,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top"
+    },
+    "facing=west,half=lower,hinge=left,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 270
+    },
+    "facing=west,half=lower,hinge=left,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 270
+    },
+    "facing=west,half=lower,hinge=right,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=right,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=right,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 90
+    },
+    "facing=west,half=lower,hinge=right,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_bottom_back",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=left,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=west,half=upper,hinge=left,open=true,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 270
+    },
+    "facing=west,half=upper,hinge=right,open=false,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=right,open=false,visible=true,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=right,open=true,visible=false,style=back": {
+      "model": "traindeco:block/pink_line_train_door/block_top",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=right,open=true,visible=true,style=back": {
       "model": "traindeco:block/pink_line_train_door/block_top",
       "y": 90
     }

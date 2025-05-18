@@ -6,7 +6,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.phasico.traindeco.block.behaviour.TrainLineSlidingDoorMovementBehaviour;
 import net.phasico.traindeco.block.door.TrainLineSlidingDoorBlock;
-import net.phasico.traindeco.registry.TrainDecoSoundEvent;
+import net.phasico.traindeco.registry.TrainDecoSoundEvents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -29,7 +29,7 @@ public class TrainLineDoorMovingInteraction extends SimpleBlockMovingInteraction
                 ? null  //The soundeffect will be played in movement behaviour!
                 : SoundEvents.IRON_DOOR_OPEN;
         /*SoundEvent alarm = currentState.getValue(DoorBlock.OPEN)
-                ? TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get()
+                ? TrainDecoSoundEvents.DOOR_CLOSING_ALARM.get()
                 : null;*/
 
         BlockPos otherPos = currentState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();

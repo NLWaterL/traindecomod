@@ -67,6 +67,9 @@
   "block.traindeco.gray_line_train_door": "Gray Line Metro Train Door",
   "block.traindeco.light_gray_line_train_door": "Light Gray Line Metro Train Door",
   "block.traindeco.white_line_train_door": "White Line Metro Train Door",
-  "block.traindeco.brown_line_train_door": "Brown Line Metro Train Door"
+  "block.traindeco.brown_line_train_door": "Brown Line Metro Train Door",
+
+  "item.traindeco.brush": "Brush",
+  "item.traindeco.mute": "Train Door Alarm Mute"
 
   }

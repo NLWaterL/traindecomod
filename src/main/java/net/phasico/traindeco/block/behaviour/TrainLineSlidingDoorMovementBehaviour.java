@@ -27,7 +27,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.phys.Vec3;
-import net.phasico.traindeco.registry.TrainDecoSoundEvent;
+import net.phasico.traindeco.registry.TrainDecoSoundEvents;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
@@ -75,11 +75,11 @@ public class TrainLineSlidingDoorMovementBehaviour implements MovementBehaviour 
 
         if (!wasSettled && sdbe.animation.settled() && !open)
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                    SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, .125f, 1, false);
+                    SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, 0.125f, 1.0f, false);
 
         if (previousValue > 0.01f && newValue < previousValue && !open && hasPlaySound >= 60) {
             context.world.playLocalSound(context.position.x, context.position.y, context.position.z,
-                    TrainDecoSoundEvent.DOOR_CLOSING_ALARM.get(), SoundSource.BLOCKS, 0.125f, 1.0f, false);
+                    TrainDecoSoundEvents.DOOR_CLOSING_ALARM.get(), SoundSource.BLOCKS, 0.125f, 1.0f, false);
             hasPlaySound = 0;
             context.data.putInt("hasPlaySound", hasPlaySound);
         }

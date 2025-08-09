@@ -26,14 +26,12 @@ Currently, I add these things:
 
 -Metro train door with a window and coloured line, which bevahes like the brass door in Create, has a moving animation.
 
+-If you put the train doors on a moving contraption, it would have a unique sound effect and a slower moving animation. Right clicking the door with the brush added by the mod, you can change texture variants of the door.
+
 ---
 I am planning to add these things (Long term plans):
 ---
 -Platform gates that is 1.5 block high.(Not sure how to do it though,maybe make the texture 1.5 block high)
-
--Add new variants of the train door: Different textures for the two side of the moving door, making it realistic.(Basically, one side with color lines and the other side without, so you cannot see the line inside the train.)
-
--Sound effects for the door.(Maybe)
 
 -More decos/utils, like a speaker or more decorative blocks.
 
@@ -56,16 +54,17 @@ respond very quickly.
 ---
 目前加入了以下内容
 ---
+
 -三种画了彩色线条的方块，模拟地铁车厢上的涂装和地铁站里的装饰
 
 -画了彩色线条的移动门，和机械动力的黄铜门一样有动画。搭配画线车厢方块使用。
 
+-移动门在动态结构上有特殊音效和放慢的动画。可以用mod加入的刷子右键改变材质（装配前）。
+
 ---
 目前准备加入的物品（长期计划）
 ---
--半高屏蔽门（丑话放前面，大概率碰撞箱是两格的，就是移动门改材质）
-
--地铁门材质改成一面画线一面没画线的，这样更符合现实（不过会保留原来两面都有线的版本，只是制作新的门）
+-半高屏蔽门
 
 -门的音效（可能加入）
 
